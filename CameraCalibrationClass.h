@@ -24,7 +24,7 @@ private:
 	vector<vector<Point3f> > objectPoints; // the points in world coordinates
 	vector<vector<Point2f> > imagePoints; // the point positions in pixels
 	cv::Mat cameraMatrix; // output Matrices
-	cv::Mat distCoeffs; // flag to specify how calibration is done
+	cv::Mat distCoeffs;
 
 	int flag;
 	cv::Mat map1,map2; // used in image undistortion

@@ -25,6 +25,9 @@ int main()
 	int s  = cc.addChessboardPoints(imagePath, boardSize);
 	cout << s << endl;
 	double res = cc.calibrate(boardSize);
+
+
+
 	cout << "Final re-proj error: "<< res << endl;
 	waitKey(0);
 	return 0;
