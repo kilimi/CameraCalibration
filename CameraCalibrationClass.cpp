@@ -51,6 +51,6 @@ double CameraCalibrationClass::calibrate(cv::Size &imageSize)
 	mustInitUndistort= true;
 	std::vector<cv::Mat> rvecs, tvecs;
 	return
-			calibrateCamera(objectPoints, imagePoints, imageSize, cameraMatrix, distCoeffs,	rvecs, tvecs, flag);
+			calibrateCamera(objectPoints, imagePoints, imageSize, cameraMatrix, distCoeffs, rvecs, tvecs, flag);
 
 }

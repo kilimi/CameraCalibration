@@ -18,7 +18,7 @@ public:
 	CameraCalibrationClass() : flag(0), mustInitUndistort(true) {};
 	int addChessboardPoints(const std::vector<std::string>& filelist, cv::Size & boardSize);
 	void addPoints(const std::vector<cv::Point2f>& imageCorners, const std::vector<cv::Point3f>& objectCorners);
-	double calibrate(cv::Size &imageSize);
+	double calibrate(cv::Size &);
 private:
 	// input points:
 	vector<vector<Point3f> > objectPoints; // the points in world coordinates
